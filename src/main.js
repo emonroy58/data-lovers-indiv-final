@@ -1,14 +1,27 @@
+const barMenu = document.getElementById('bar-menu');
+barMenu.style.display = 'none';
+
+const home = document.getElementById('home');
+
+home.addEventListener("click", ()=>{
+  inicio.style.display ='block'; 
+  barMenu.style.display = 'none'; 
+})
+
+
 let basePokemon = {}; //inicializar BD
 const arrayTipoPokemon = [];
 let selectType;
 const url = './data/pokemon/pokemon.json'; //ruta del archivo .json
 
-
+const inicio = document.getElementById('inicio');
 const btnPokemon = document.getElementById('btn-Pokemon');
 const productWrapper = document.getElementById('list-pokemon');
 const viewPokemons = () => { //muestra pokemon por tipo
   const basePokemon = getPokemon(); //lectuta de la BD por medio de GET
   // const basePokemon = JSON.parse(localStorage.getItem('data'));
+  barMenu.style.display = 'block'; 
+  inicio.style.display ='none';
   const base = basePokemon.pokemon;
   let viewAllPokem = '';
   for (let i in base) {
