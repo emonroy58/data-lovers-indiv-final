@@ -1,0 +1,42 @@
+.navbar-dark .navbar-brand{
+	color: peru;
+}
+
+.border{
+	border-color: red !important;
+}
+
+form .form-group label{
+	color: peru;
+	font-weight: bold;
+}
+
+form .btn-default,.card .btn-default{
+	border-radius: 5px;
+	background: peru;
+	color: #343a40;
+}
+
+form .btn-default:hover, .card .btn-default:hover{
+	color: peru;
+	border: 1px solid peru !important;
+	background: #343a40 !important;
+}
+
+input[type="file"]{
+	color: white;
+}
+
+.product-wrapper .card{
+	color: peru;
+}
+
+.product-wrapper .card img{
+	width: calc(100% - 40px);
+	margin: 20px auto 0 auto;
+	display:block;
+}
+
+.product-wrapper .card .card-text{
+	color: white;
+}
